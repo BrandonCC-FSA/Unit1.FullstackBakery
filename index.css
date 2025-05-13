@@ -1,0 +1,120 @@
+header {
+  display: flex;
+  background-color: #2a3c1a;
+  border: outset clamp(5px, 2vw, 15px) #2e3333;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(0.5rem, 2vw, 1rem);
+  margin: clamp(1px, 0.5vw, 3px);
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+.brand {
+  color: #f8cf3a;
+  font-size: clamp(20px, 4vw, 40pt);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 8px 8px 10px #2a3c1a;
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(1ch, 2vw, 3ch);
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: clamp(12px, 2vw, 15pt);
+  flex-wrap: wrap;
+}
+nav a {
+  color: #b5d392;
+  text-align: center;
+}
+nav a:hover {
+  color: #f8cf3a;
+}
+body {
+  background-color: #b5d392;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  border: outset 10px #2e3333;
+  margin: 3px;
+  width: 15%;
+  height: auto;
+  flex-shrink: 0;
+  overflow: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+aside > #buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#buttons li {
+  list-style: none;
+  text-align: left;
+  background-color: #2a3c1a;
+  text-decoration: none;
+  border: 2px inset #2e3333;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding-left: 3px;
+  color: #f8cf3a;
+  transition: filter 0.3s ease;
+  font-size: clamp(10px, 2vw, 20px);
+}
+#buttons li:hover {
+  background-color: #f8cf3a;
+  color: #2a3c1a;
+}
+.testimonial {
+  background: #2a3c1a;
+  color: #f8cf3a;
+  padding: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20pt;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  background-color: #2e3333;
+  color: #b5d392;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+article {
+  margin: 1%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+  padding: 10px;
+  font-size: 15pt;
+  width: clamp(100px, 2vw, 2560px);
+}
